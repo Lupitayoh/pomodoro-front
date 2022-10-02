@@ -3,27 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { ChronometerComponent } from './chronometer/chronometer.component';
 
-import { app_routing } from './app.routes';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { AppRoutingModule } from './app-routing.module';
 
-
-//import { AppRoutingModule } from './app.routes';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ChronometerComponent,
-    DashboardComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-   // AppRoutingModule,
-    app_routing
-  ],
-  exports: [
-    RouterModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
